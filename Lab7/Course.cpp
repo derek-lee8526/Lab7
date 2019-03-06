@@ -9,23 +9,70 @@ Course::Course (const Course & m) : title (m.title), day (m.day), start_time (m.
 {
 }
 
-Course & Course::operator =(const Course & m) {
-    //TODO implement the operator
+Course & Course::operator =(Course m1) {
+    mySwap(*this,m1);
     return *this;
 }
-bool Course::operator == (const Course & m) const {
-    //TODO implement the operator
-    return false;
+bool operator == (const Course & m1, const Course & m2)
+{
+    if(m1.day == m2.day)
+    {
+        return true;
+    }
+    else if(m1.title == m2.title)
+    {
+        return true;
+    }
+    else if(m1.start_time == m2.start_time)
+    {
+        return true;
+    }
+    else if(m1.finish_time == m2.finish_time)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
 }
 
-bool Course::operator < (const Course & m) const
+bool operator < (const Course &m1, const Course &m2)
 {
-    //TODO implement the operator
-    return false;
+    if(m1.day < m2.day)
+    {
+        return true;
+    }
+    else if (m1.start_time < m2.start_time)
+    {
+        return true;
+    }
+    else if(m1.finish_time < m2.finish_time)
+    {
+        return true;
+    }
+    else if(m1.title < m2.title)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 ostream & operator << (ostream &os, const Course & m)
 {
-    //TODO implement the operator
+    cout << m.title << " " << m.day << " " << m.start_time << " " << m.finish_time << endl;
     return os;
+}
+
+void mySwap(Course & m1, Course & m2)
+{
+    using std::swap;
+    swap(m1.day,m2.day);
+    swap(m1.title,m2.title);
+    swap(m1.start_time,m2.start_time);
+    swap(m1.finish_time,m2.finish_time);
 }

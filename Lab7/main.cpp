@@ -21,6 +21,16 @@ void printSchedule()
 }
 
 int main () {
+
+
+
+
+
+
+
+
+
+
     //TODO read from courses.txt
     //TODO store data in an STL container
     //TODO sort your STL container with the sort algorithm
