@@ -14,9 +14,6 @@
     <list default="true" id="8cae0ec0-0383-4a49-8816-c7470c681bb0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab7/Course.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/Course.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab7/Course.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/Course.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir/Course.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir/Course.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab7/cmake-build-debug/Lab7.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/cmake-build-debug/Lab7.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab7/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/main.cpp" afterDir="false" />
@@ -43,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab7/Course.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="46" selection-start-line="46" selection-end-line="49" selection-end-column="5" />
+            <state>
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -52,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lab7/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="81" selection-end-column="5" />
+            <state relative-caret-position="386">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -154,12 +151,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551834645857</updated>
-      <workItem from="1551834647126" duration="38596000" />
+      <workItem from="1551834647126" duration="40042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38596000" />
+    <option name="totallyTimeSpent" value="40042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -178,13 +175,13 @@
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16308725" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.25135428" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3101983" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.4225352" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.3937677" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.41359773" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.27903682" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.27193934" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="10" weight="0.32768363" />
@@ -226,15 +223,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab7/Course.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="46" selection-start-line="46" selection-end-line="49" selection-end-column="5" />
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab7/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="81" selection-end-column="5" />
+        <state relative-caret-position="386">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -44,10 +44,6 @@ bool operator < (const Course &m1, const Course &m2)
     {
         return m1.day < m2.day;
     }
-    else if(m1.title != m2.title)
-    {
-        return m1.title < m2.title;
-    }
     else if(m1.start_time != m2.start_time)
     {
         return m1.start_time < m2.start_time;
@@ -101,11 +97,9 @@ char Course::getDay() const {
 
 istream &operator >>(istream &is, Course::dayOfWeek& day)
 {
-
     char val;
     if(is >> val)
     {
-
         if(val == 'T')
         {
             day = Course::TUE;

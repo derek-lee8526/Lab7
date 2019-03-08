@@ -13,25 +13,24 @@
 using namespace std;
 
 
-//void checkConflict(vector<Course> c)
-//{
-//    for(auto it1 = c.begin(); it1 != c.end(); it1++)
-//    {
-//        for(auto it2 = it1 + 1; it2 != c.end(); it2++)
-//        {
-//            if((*it1).day == (*it2).day)
-//            {
-//                if(!((*it2).finish_time < (*it1).start_time) && !((*it1).finish_time < (*it2).start_time))
-//                {
-//                    cout<<"Conflict:"<<endl;
-//                    cout<<*it1;
-//                    cout<<*it2;
-//                }
-//            }
-//        }
-//    }
-//
-//}
+void checkConflict(vector<Course> c)
+{
+    for(auto it1 = c.begin(); it1 != c.end(); it1++)
+    {
+        for(auto it2 = it1 + 1; it2 != c.end(); it2++)
+        {
+            if((*it1).day == (*it2).day)
+            {
+                if(!((*it2).finish_time < (*it1).start_time) && !((*it1).finish_time < (*it2).start_time))
+                {
+                    cout<<"Conflict:"<<endl;
+                    cout<<*it1;
+                    cout<<*it2 <<endl;
+                }
+            }
+        }
+    }
+}
 
 
 /*
@@ -40,7 +39,8 @@ using namespace std;
  */
 void printSchedule(vector<Course> c)
 {
-    //TODO implement your print using the copy algorithm, 2 iterators, and an ostream_iterator
+    std::ostream_iterator<Course> out (std::cout,"");
+    copy(c.begin(),c.end(),out);
 }
 
 bool sortDays(Course i, Course j)
@@ -73,16 +73,14 @@ int main () {
             Course c(title,day,start,end);
             course.push_back(c);
         }
-        sort(course.begin(),course.end(),sortDays);
+
     }
+    sort(course.begin(),course.end(),sortDays);
 
 
-    for(it = course.begin(); it!= course.end(); it++){
-        cout<<*it;
-    }
 
-//checkConflict(course);
-
+    checkConflict(course);
+    printSchedule(course);
     //TODO read from courses.txt
     //TODO store data in an STL container
     //TODO sort your STL container with the sort algorithm
