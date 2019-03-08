@@ -42,9 +42,13 @@ bool operator < (const Course &m1, const Course &m2)
 {
     if(m1.day != m2.day)
     {
-        return m1.day<m2.day;
+        return m1.day < m2.day;
     }
-    else if (m1.start_time != m2.start_time)
+    else if(m1.title != m2.title)
+    {
+        return m1.title < m2.title;
+    }
+    else if(m1.start_time != m2.start_time)
     {
         return m1.start_time < m2.start_time;
     }
@@ -52,10 +56,7 @@ bool operator < (const Course &m1, const Course &m2)
     {
         return m1.finish_time < m2.finish_time;
     }
-    else
-    {
-        return false;
-    }
+
 }
 
 ostream & operator << (ostream &os, const Course & m)
@@ -75,23 +76,23 @@ void mySwap(Course & m1, Course & m2)
 
 char Course::getDay() const {
 
-    if(this->day =='M')
+    if(this->day == 0)
     {
         return 'M';
     }
-    else if(this->day == 'T')
+    else if(this->day == 1)
     {
         return 'T';
     }
-    else if(this->day == 'W')
+    else if(this->day == 2)
     {
         return 'W';
     }
-    else if(this->day == 'R')
+    else if(this->day == 3)
     {
         return 'R';
     }
-    else if(this-> day == 'F')
+    else if(this-> day == 4)
     {
         return 'F';
     }
@@ -100,11 +101,11 @@ char Course::getDay() const {
 
 istream &operator >>(istream &is, Course::dayOfWeek& day)
 {
-    day = Course::MON;
 
     char val;
     if(is >> val)
     {
+
         if(val == 'T')
         {
             day = Course::TUE;
@@ -128,6 +129,9 @@ istream &operator >>(istream &is, Course::dayOfWeek& day)
         else if(val == 'U')
         {
             day = Course::SUN;
+        } else
+        {
+            day = Course::MON;
         }
     }
     return is;

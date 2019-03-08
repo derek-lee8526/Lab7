@@ -22,4 +22,4 @@ char getDay() const;
 
 // Helper operator for output
 ostream &operator << (ostream &os, const Course & m);
-istream &operator >>(istream &in, Course &m);
+istream &operator >>(istream &in, Course::dayOfWeek& day);
