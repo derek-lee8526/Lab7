@@ -7,9 +7,20 @@
 #include <sstream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <set>
 #include "Course.hpp"
 
 using namespace std;
+
+
+bool checkConflict(Course c1, Course c2)
+{
+    if( c1 == c2)
+    {
+        return true;
+    } else if()
+}
+
 
 /*
  * print schedule - outputs course schedule to the screen
@@ -20,16 +31,41 @@ void printSchedule()
     //TODO implement your print using the copy algorithm, 2 iterators, and an ostream_iterator
 }
 
+bool sortDays(Course i, Course j)
+{
+    return (i<j);
+}
+
 int main () {
 
+    vector<Course> course;
+    vector<Course>::iterator it;
+    string title;
+    char day;
+    unsigned int start;
+    unsigned int end;
 
 
+    ifstream fin;
+    fin.open("../courses.txt");
 
 
+    if(!fin){
+        cerr << "cannot open file" << endl;
+        exit(1);
+    }
 
+    while(fin >> title >> day >> start >> end)
+    {
+        Course c(title, static_cast<Course::dayOfWeek>(day), start, end);
+        course.push_back(c);
+    }
 
+    sort(course.begin(),course.end(),sortDays);
 
-
+    for(it = course.begin(); it!= course.end(); it++){
+        cout<<*it;
+    }
 
     //TODO read from courses.txt
     //TODO store data in an STL container

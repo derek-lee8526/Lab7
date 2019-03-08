@@ -14,25 +14,3 @@ Course.hpp
 iostream
 -
 
-/cygdrive/c/Users/Derek/CLionProjects/Lab7/Lab7/main.cpp
-iostream
--
-vector
--
-algorithm
--
-iterator
--
-fstream
--
-string
--
-sstream
--
-stdio.h
--
-stdlib.h
--
-Course.hpp
-/cygdrive/c/Users/Derek/CLionProjects/Lab7/Lab7/Course.hpp
-
